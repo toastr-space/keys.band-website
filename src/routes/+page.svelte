@@ -1,6 +1,37 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
+  import { MetaTags } from "svelte-meta-tags";
 </script>
+
+<MetaTags
+  title="Keys.Band Extension for chrome"
+  titleTemplate="%s | Svelte Meta Tags"
+  description="Nostr Nip07 extension for browsers"
+  canonical="https://www.canonical.ie/"
+  openGraph={{
+    url: "@site",
+    title: "Keys.Band Extension for chrome",
+    description: "Nostr Nip07 extension for browsers.",
+    images: [
+      {
+        url: "@site/img/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Og Image Alt",
+      },
+    ],
+    site_name: "SiteName",
+  }}
+  twitter={{
+    handle: "@handle",
+    site: "@site",
+    cardType: "summary_large_image",
+    title: "Keys.Band Extension for chrome",
+    description: "Nostr Nip07 extension for browsers.",
+    image: "@site/img/logo.png",
+    imageAlt: "Twitter image alt",
+  }}
+/>
 
 <div class="w-full pl-16">
   <div class="absolute inset-0 bg-top bg-no-repeat bg-illustration-01" />
