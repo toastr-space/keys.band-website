@@ -59,12 +59,10 @@
       <span class="text-cyan-500"> browsers </span>
     </h1>
     <div
-      class="py-4 flex flex-row space-x-10 mr-auto opacity-60 justify-center"
+      class="py-4 flex flex-row space-x-10 mr-auto opacity-80 justify-center"
     >
       <Icon icon="logos:chrome" width={54} />
-      <Icon icon="logos:brave" width={52} />
-      <Icon icon="logos:microsoft-edge" width={54} class="opacity-20" />
-      <Icon icon="logos:firefox" width={54} class="opacity-20" />
+      <Icon icon="logos:brave" width={50} />
     </div>
     <p class="max-w-xl mx-auto mb-8 text-xl text-center xl:max-w-2xl">
       100% free nostr nip07 multi-key manager for your browser, with lot of
@@ -74,11 +72,11 @@
       class="flex flex-col justify-center max-w-xs mx-auto mb-12 sm:max-w-full sm:flex-row"
     >
       <a
-        class="mb-4 pb-14 py-2 bg-cyan-900 btn w-64 hover:bg-cyan-700 sm:mr-2 flex space-x-20 rounded rounded-xl"
+        class="mb-3 pb-14 pt-3 btn btn-accent text-black w-66 sm:mr-2 flex space-x-20"
         href="#"
       >
-        <Icon icon="logos:chrome" width={48} class="pr-2" />
-        Install on chrome
+        <Icon icon="logos:chrome-web-store" width={48} class="pr-2" />
+        Install from store
       </a>
     </div>
     <div class="mb-16">
