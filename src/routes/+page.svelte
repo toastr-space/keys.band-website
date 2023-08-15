@@ -83,8 +83,9 @@
     </div>
     <div class="mb-16">
       <img
-        class="block w-full max-w-5xl mx-auto rounded"
-        src="img/video-placeholder.jpg"
+        class="block w-full max-w-2xl mx-auto rounded-2xl"
+        src="https://www.blackbitcoinbillionaire.com/content/images/2023/02/Screenshot-2023-02-26-at-4.50.24-PM.png"
+        width="260"
         alt=""
       />
     </div>
