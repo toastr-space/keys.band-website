@@ -9,12 +9,12 @@
   description="Nostr Nip07 extension for browsers"
   canonical="https://www.canonical.ie/"
   openGraph={{
-    url: "@site",
+    url: "https://keys.band",
     title: "Keys.Band Extension for chrome",
     description: "Nostr Nip07 extension for browsers.",
     images: [
       {
-        url: "@site/img/logo.png",
+        url: "https://keys.band/img/logo.png",
         width: 800,
         height: 600,
         alt: "Og Image Alt",
@@ -24,11 +24,11 @@
   }}
   twitter={{
     handle: "@handle",
-    site: "@site",
+    site: "https://keys.band",
     cardType: "summary_large_image",
     title: "Keys.Band Extension for chrome",
     description: "Nostr Nip07 extension for browsers.",
-    image: "@site/img/logo.png",
+    image: "https://keys.band/img/logo.png",
     imageAlt: "Twitter image alt",
   }}
 />
@@ -209,7 +209,7 @@
     </div>
 
     <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-      <a class="text-indigo-700" href="#!">
+      <a class="text-indigo-700" href="https://keys.band">
         <img src="img/logo_white.png" width="48" alt="" class="mx-auto mb-4" />
       </a>
     </div>
