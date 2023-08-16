@@ -64,17 +64,13 @@
     <h1
       class="px-8 mt-16 mb-4 text-5xl font-extrabold leading-tight text-center text-white xl:text-6xl"
     >
-      Keep your keys safe with the best Nostr Nip07 Extension for
-      <span class="text-cyan-500">Chromium Browsers</span>
+      Keep your keys safe with the best Nostr Extension for
+      <span class="text-purple-400">Chromium Browsers</span>
     </h1>
-    <div
-      class="py-4 flex flex-row space-x-10 mr-auto opacity-90 justify-center"
+    <p
+      class="max-w-xl mx-auto mb-8 mt-8 text-xl text-center xl:max-w-2xl intro"
     >
-      <Icon icon="logos:chrome" width={54} />
-      <Icon icon="logos:brave" width={50} />
-    </div>
-    <p class="max-w-xl mx-auto mb-8 text-xl text-center xl:max-w-2xl">
-      Experience the free Nostr Nip07 multi-key manager for your browser, packed
+      Experience the free Nostr NIP07 multi-key manager for your browser, packed
       with innovative features.
     </p>
     <div
@@ -107,40 +103,40 @@
       >
         <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
           <span
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-indigo-700 rounded-full"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-purple-400 rounded-full"
           >
             <Icon icon="game-icons:house-keys" />
           </span>
           <h3 class="mb-2 text-2xl font-bold text-white">
             Multi-key Management
           </h3>
-          <p class="max-w-xs mx-auto text-lg text-gray-500">
+          <p class="max-w-xs mx-auto text-lg text-gray-400">
             Simplify key management and effortlessly switch between multiple
             keys with a single click.
           </p>
         </li>
         <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
           <span
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-indigo-700 rounded-full"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-purple-400 rounded-full"
           >
             <Icon icon="mdi:shield-key-outline" />
           </span>
           <h3 class="mb-2 text-2xl font-bold text-white">Permission Control</h3>
-          <p class="max-w-xs mx-auto text-lg text-gray-500">
+          <p class="max-w-xs mx-auto text-lg text-gray-400">
             Manage permissions, including duration and scope, and block
             untrusted websites effortlessly.
           </p>
         </li>
         <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
           <span
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-indigo-700 rounded-full"
+            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-purple-400 rounded-full"
           >
             <Icon icon="ph:notification-bold" />
           </span>
           <h3 class="mb-2 text-2xl font-bold text-white">
             History & Notifications
           </h3>
-          <p class="max-w-xs mx-auto text-lg text-gray-500">
+          <p class="max-w-xs mx-auto text-lg text-gray-400">
             Keep track of all activities and manage notifications for each event
             by priority.
           </p>
@@ -160,7 +156,7 @@
           class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
         >
           <p
-            class="mb-2 text-sm font-semibold leading-none text-center text-indigo-600 uppercase sm:text-left"
+            class="mb-2 text-sm font-semibold leading-none text-center text-purple-400 uppercase sm:text-left"
           >
             Explore Your Activities
           </p>
@@ -184,7 +180,7 @@
           class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pl-16"
         >
           <p
-            class="mb-2 text-sm font-semibold leading-none text-center text-indigo-600 uppercase sm:text-left"
+            class="mb-2 text-sm font-semibold leading-none text-center text-purple-400 uppercase sm:text-left"
           >
             Logging and Notifications
           </p>
@@ -206,7 +202,7 @@
           class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
         >
           <p
-            class="mb-2 text-sm font-semibold leading-none text-center text-indigo-600 uppercase sm:text-left"
+            class="mb-2 text-sm font-semibold leading-none text-center text-purple-400 uppercase sm:text-left"
           >
             Enhanced Security
           </p>
@@ -223,7 +219,7 @@
     </div>
 
     <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-      <a class="text-indigo-700" href="https://keys.band">
+      <a class="text-purple-400" href="https://keys.band">
         <img
           src="img/logo_white.png"
           width="48"
