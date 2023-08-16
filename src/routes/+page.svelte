@@ -47,9 +47,9 @@
         &nbsp;
         <span
           class="text-2xl ml-4 mt-1 font-semibold font-sans text-purple-400"
-          style="font-family: 'Courier New', Courier, monospace;"
+          style="font-family: 'Futura', sans-serif;"
         >
-          Keys.<span class="text-white">band</span>
+          keys.<span class="text-white">band</span>
         </span>
       </a>
 
@@ -57,19 +57,18 @@
         <a
           class="mr-8 font-semibold hover:text-white"
           target="_blank"
-          href="https://github.com/toastr-space/keys.band/">GitHub</a
+          href="https://github.com/toastr-space/keys-band/">GitHub</a
         >
       </div>
     </div>
     <h1
       class="px-8 mt-16 mb-4 text-5xl font-extrabold leading-tight text-center text-white xl:text-6xl"
     >
-      Elevate Your Browsing with the Nostr Nip07 Extension for
-      <br />
-      <span class="text-cyan-500">Browsers</span>
+      Keep your keys safe with the best Nostr Nip07 Extension for
+      <span class="text-cyan-500">Chromium Browsers</span>
     </h1>
     <div
-      class="py-4 flex flex-row space-x-10 mr-auto opacity-80 justify-center"
+      class="py-4 flex flex-row space-x-10 mr-auto opacity-90 justify-center"
     >
       <Icon icon="logos:chrome" width={54} />
       <Icon icon="logos:brave" width={50} />
@@ -82,11 +81,11 @@
       class="flex flex-col justify-center max-w-xs mx-auto mb-12 sm:max-w-full sm:flex-row"
     >
       <a
-        class="mb-3 pb-14 pt-3 btn btn-accent text-black w-66 sm:mr-2 flex space-x-20"
+        class="mb-3 pb-14 pt-3 btn btn-primary text-black w-66 sm:mr-2 flex space-x-20"
         href="#"
       >
         <Icon icon="logos:chrome-web-store" width={48} class="pr-2" />
-        Get It from the Store
+        Get It from the Chrome Web Store
       </a>
     </div>
     <div class="mb-16">
@@ -149,12 +148,9 @@
       </ul>
     </div>
     <div class="mb-16 border-b border-gray-800">
-      <h2 class="mb-2 title sm:text-4xl md:text-5xl">
-        Screenshots and Previews
-      </h2>
+      <h2 class="mb-2 title sm:text-4xl md:text-5xl">Screenshots</h2>
       <p class="mb-20 mx-auto intro sm:max-w-xl">
-        Embark on a visual journey of the extension with captivating screenshots
-        and previews.
+        See what we have cooked up for you.
       </p>
       <div class="flex flex-col mb-8 sm:flex-row">
         <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
