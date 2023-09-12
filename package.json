@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && bash clean_build.sh",
     "preview": "vite preview",
     "deploy": "node ./gh-pages.js",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
