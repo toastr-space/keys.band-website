@@ -49,7 +49,7 @@
           class="text-2xl ml-4 mt-1 font-semibold font-sans text-purple-400"
           style="font-family: 'Futura', sans-serif;"
         >
-          keys.<span class="text-white">band</span>
+          Keys.<span class="text-white">Band</span>
         </span>
       </a>
 
@@ -78,7 +78,8 @@
     >
       <a
         class="mb-3 pb-14 pt-3 btn btn-primary text-black w-66 sm:mr-2 flex space-x-20"
-        href="#"
+        href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
+        target="_blank"
       >
         <Icon icon="logos:chrome-web-store" width={48} class="pr-2" />
         Get It from the Chrome Web Store
