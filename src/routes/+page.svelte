@@ -33,207 +33,266 @@
   }}
 />
 
-<div class="w-full pl-16">
-  <div class="absolute inset-0 bg-top bg-no-repeat bg-illustration-01" />
-  <div class="absolute inset-0 bg-center bg-no-repeat bg-illustration-02" />
-  <div class="container relative">
-    <div class="flex items-center justify-between py-6">
-      <a href="#" class="flex">
-        <img
-          class="block w-10 h-10"
-          src="img/logo_white.png"
-          alt="Keys.Band Logo"
-        />
-        &nbsp;
-        <span
-          class="text-2xl ml-4 mt-1 font-semibold font-sans text-purple-400"
-          style="font-family: 'Futura', sans-serif;"
-        >
-          Keys.<span class="text-white">Band</span>
-        </span>
-      </a>
-
-      <div class="flex items-center mb-4 md:block">
-        <a
-          class="mr-8 font-semibold hover:text-white"
-          target="_blank"
-          href="https://github.com/toastr-space/keys-band/">GitHub</a
-        >
-      </div>
-    </div>
-    <h1
-      class="px-8 mt-16 mb-4 text-5xl font-extrabold leading-tight text-center text-white xl:text-6xl"
-    >
-      Keep your keys safe with the best Nostr Extension for
-      <span class="text-purple-400">Chromium Browsers</span>
-    </h1>
-    <p
-      class="max-w-xl mx-auto mb-8 mt-8 text-xl text-center xl:max-w-2xl intro"
-    >
-      Experience the free Nostr NIP07 multi-key manager for your browser, packed
-      with innovative features.
-    </p>
+<div
+  class="backdrop-blur-3xl bg-black bg-opacity-70 flex w-full flex-col justify-center items-center px-16 py-11 max-md:max-w-full max-md:px-5"
+>
+  <header
+    class="flex w-full max-w-[1200px] flex-col items-stretch mb-8 max-md:max-w-full"
+  >
     <div
-      class="flex flex-col justify-center max-w-xs mx-auto mb-12 sm:max-w-full sm:flex-row"
+      class="justify-between items-stretch flex w-full gap-5 pr-8 max-md:max-w-full max-md:flex-wrap max-md:pr-5"
     >
-      <a
-        class="mb-3 pb-14 pt-3 btn btn-primary text-black w-66 sm:mr-2 flex space-x-20"
-        href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
-        target="_blank"
-      >
-        <Icon icon="logos:chrome-web-store" width={48} class="pr-2" />
-        Get It from the Chrome Web Store
-      </a>
-    </div>
-    <div class="mb-16">
-      <img
-        class="block w-full max-w-2xl mx-auto rounded-2xl"
-        src="https://www.blackbitcoinbillionaire.com/content/images/2023/02/Screenshot-2023-02-26-at-4.50.24-PM.png"
-        width="260"
-        alt="Extension Screenshot"
-      />
-    </div>
-    <div>
-      <h2 class="title sm:text-4xl md:text-5xl">Fortify Your Nostr Keys</h2>
-      <p class="mb-16 mx-auto intro sm:max-w-xl">
-        Elevate security with the Nostr Nip07 extension, safeguarding your keys
-        and overseeing activities, notifications, and more.
-      </p>
-      <ul
-        class="flex flex-col flex-wrap justify-center mb-20 text-center border-b border-gray-900 sm:flex-row"
-      >
-        <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
-          <span
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-purple-400 rounded-full"
-          >
-            <Icon icon="game-icons:house-keys" />
-          </span>
-          <h3 class="mb-2 text-2xl font-bold text-white">
-            Multi-key Management
-          </h3>
-          <p class="max-w-xs mx-auto text-lg text-gray-400">
-            Simplify key management and effortlessly switch between multiple
-            keys with a single click.
-          </p>
-        </li>
-        <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
-          <span
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-purple-400 rounded-full"
-          >
-            <Icon icon="mdi:shield-key-outline" />
-          </span>
-          <h3 class="mb-2 text-2xl font-bold text-white">Permission Control</h3>
-          <p class="max-w-xs mx-auto text-lg text-gray-400">
-            Manage permissions, including duration and scope, and block
-            untrusted websites effortlessly.
-          </p>
-        </li>
-        <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
-          <span
-            class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-purple-400 rounded-full"
-          >
-            <Icon icon="ph:notification-bold" />
-          </span>
-          <h3 class="mb-2 text-2xl font-bold text-white">
-            History & Notifications
-          </h3>
-          <p class="max-w-xs mx-auto text-lg text-gray-400">
-            Keep track of all activities and manage notifications for each event
-            by priority.
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="mb-16 border-b border-gray-800">
-      <h2 class="mb-2 title sm:text-4xl md:text-5xl">Screenshots</h2>
-      <p class="mb-20 mx-auto intro sm:max-w-xl">
-        See what we have cooked up for you.
-      </p>
-      <div class="flex flex-col mb-8 sm:flex-row">
-        <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-          <img src="/img/frame-1.svg" alt="Screenshot 1" />
-        </div>
-        <div
-          class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
-        >
-          <p
-            class="mb-2 text-sm font-semibold leading-none text-center text-purple-400 uppercase sm:text-left"
-          >
-            Explore Your Activities
-          </p>
-          <h3 class="title title-small sm:text-left md:text-4xl">
-            Real-Time Monitoring
-          </h3>
-          <p class="text md:text-left">
-            In this screenshot, you can observe the request count, current
-            website information, and permission status. You also have the
-            ability to update website permissions by simply clicking on the
-            'Update' button. For limited-time permissions, a countdown timer is
-            displayed.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col mb-8 sm:flex-row">
-        <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-          <img class="rounded-sm" src="/img/frame-2.svg" alt="Screenshot 2" />
-        </div>
-        <div
-          class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pl-16"
-        >
-          <p
-            class="mb-2 text-sm font-semibold leading-none text-center text-purple-400 uppercase sm:text-left"
-          >
-            Logging and Notifications
-          </p>
-          <h3 class="title title-small sm:text-left md:text-4xl">
-            Keep Track of Your Activities
-          </h3>
-          <p class="text md:text-left">
-            Welcome to the logging page! Witness a comprehensive view of all
-            your activities. You also have the capability to manage notification
-            alerts for each event.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col mb-8 sm:flex-row">
-        <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-          <img class="rounded-sm" src="/img/frame-3.svg" alt="Screenshot 3" />
-        </div>
-        <div
-          class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
-        >
-          <p
-            class="mb-2 text-sm font-semibold leading-none text-center text-purple-400 uppercase sm:text-left"
-          >
-            Enhanced Security
-          </p>
-          <h3 class="title title-small sm:text-left md:text-4xl">
-            Control Secure Request Access
-          </h3>
-          <p class="text md:text-left">
-            All requests are presented in a popup in a separate context that is
-            inaccessible to websites. Only the user has the authority to accept
-            or deny the requests, ensuring a heightened level of security.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-      <a class="text-purple-400" href="https://keys.band">
+      <div class="items-stretch flex justify-between gap-5">
         <img
-          src="img/logo_white.png"
-          width="48"
-          alt="Keys.Band Logo"
-          class="mx-auto mb-4"
+          loading="lazy"
+          src="/img/key-logo.png"
+          class="aspect-[0.76] object-contain object-center w-[42px] overflow-hidden shrink-0 max-w-full"
         />
-      </a>
+        <div class="text-white text-2xl font-medium my-auto">keys.band</div>
+      </div>
+      <div
+        class="items-stretch self-center flex justify-between gap-5 my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center"
+      >
+        <a
+          href="https://github.com/toastr-space/keys-band"
+          target="_blank"
+          class="text-white text-base font-medium self-center my-auto"
+        >
+          GitHub
+        </a>
+        <div
+          class="justify-between items-stretch bg-zinc-800 bg-opacity-70 flex gap-4 px-6 py-4 rounded-2xl border-[0.33px] border-solid border-white border-opacity-30 max-md:px-5"
+        >
+          <div class="text-white text-base font-medium grow whitespace-nowrap">
+            Reviews
+          </div>
+          <div
+            class="items-stretch self-center flex gap-1.5 my-auto max-md:justify-center"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
+              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
+              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
+              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
+              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f98517d564536fa4574fb880f54d6bd709127bb808d14aace03eded6fbc9d1d?apiKey=f7abd25632984a63bf82dda361df2c86&"
+              class="aspect-[1.07] object-contain object-center w-4 fill-white fill-opacity-30 overflow-hidden shrink-0 max-w-full"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex flex-col justify-between mb-8 text-center sm:flex-row">
-      <p class="order-last mb-4 text-sm text-gray-500 sm:order-first">
-        Crafted with <span class="text-red-500">❤️</span> by the
-        <a href="https://toastr.space/" class="text-white">Toastr.Space</a> Team
-      </p>
+  </header>
+  <div
+    class="flex w-full max-w-[1200px] flex-col items-stretch mt-20 max-md:max-w-full max-md:mt-10 border-b border-gray-800 pb-20"
+  >
+    <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+      <div
+        class="flex flex-col items-stretch w-[57%] max-md:w-full max-md:ml-0"
+      >
+        <div class="flex grow flex-col max-md:mt-10">
+          <h1
+            class="text-white text-8xl font-semibold self-stretch max-md:max-w-full max-md:text-4xl"
+          >
+            Safe nsecs
+          </h1>
+          <h2
+            class="text-teal-400 text-5xl font-medium self-stretch max-md:max-w-full"
+          >
+            On Chromium browsers
+          </h2>
+          <div
+            class="text-white text-2xl font-medium leading-9 self-stretch mt-6 max-md:max-w-full"
+          >
+            Download our carefully crafted <br />
+            <a class="underline" href="https://nostr.com" target="_blank"
+              >Nostr</a
+            > browser extension
+          </div>
+          <a
+            class="flex items-stretch justify-between border-[color:var(--AccentColour,#2FC6B4)] gap-2 mt-10 pl-9 pr-11 py-4 rounded-2xl border-[1.4px] border-solid max-md:flex-wrap max-md:px-5"
+            href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
+            target="_blank"
+          >
+            <div
+              class="flex-grow flex-shrink basis-auto text-white text-base font-medium"
+            >
+              <span class="font-medium">Download</span>
+              <span class="font-light">in Chrome Store</span>
+            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a629e858d3575d0f2b7f47c4bb5a9a1b84c685d44dc35b117684d3ba721e9499?apiKey=f7abd25632984a63bf82dda361df2c86&"
+              class="w-4 self-center shrink-0 max-w-full my-auto aspect-square object-contain object-center overflow-hidden stroke-[2px] stroke-teal-400"
+              loading="lazy"
+              alt="Chrome Store"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-stretch w-[43%] ml-5 max-md:w-full max-md:ml-0"
+      >
+        <img
+          loading="lazy"
+          src="/img/auth-screen.png"
+          class="aspect-[0.82] object-contain object-center w-full items-start overflow-hidden max-md:mt-10"
+        />
+      </div>
     </div>
+  </div>
+  <div class="mt-20">
+    <h2 class="title sm:text-4xl md:text-5xl">Fortify Your Nostr Keys</h2>
+    <p class="mb-16 mx-auto intro sm:max-w-xl">
+      Elevate security with the Nostr Nip07 extension, safeguarding your keys
+      and overseeing activities, notifications, and more.
+    </p>
+    <ul
+      class="flex flex-col flex-wrap justify-center mb-20 text-center border-b border-gray-900 sm:flex-row"
+    >
+      <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
+        <span
+          class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-teal-400 rounded-full"
+        >
+          <Icon icon="game-icons:house-keys" />
+        </span>
+        <h3 class="mb-2 text-2xl font-bold text-white">Multi-key Management</h3>
+        <p class="max-w-xs mx-auto text-lg text-gray-400">
+          Simplify key management and effortlessly switch between multiple keys
+          with a few clicks.
+        </p>
+      </li>
+      <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
+        <span
+          class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-teal-400 rounded-full"
+        >
+          <Icon icon="mdi:shield-key-outline" />
+        </span>
+        <h3 class="mb-2 text-2xl font-bold text-white">Permission Control</h3>
+        <p class="max-w-xs mx-auto text-lg text-gray-400">
+          Manage permissions, including duration and scope, and block untrusted
+          websites effortlessly.
+        </p>
+      </li>
+      <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
+        <span
+          class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-teal-400 rounded-full"
+        >
+          <Icon icon="ph:notification-bold" />
+        </span>
+        <h3 class="mb-2 text-2xl font-bold text-white">
+          History & Notifications
+        </h3>
+        <p class="max-w-xs mx-auto text-lg text-gray-400">
+          Keep track of all activities and manage notifications for each event
+          by priority.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="max-w-[1200px] mb-16 border-b border-gray-800">
+    <h2 class="mb-2 title sm:text-4xl md:text-5xl">Screenshots</h2>
+    <p class="mb-20 mx-auto intro sm:max-w-xl">
+      See what we have cooked up for you.
+    </p>
+    <div class="flex flex-col mb-8 sm:flex-row">
+      <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
+        <img src="/img/frame-1.svg" alt="Screenshot 1" />
+      </div>
+      <div
+        class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
+      >
+        <p
+          class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
+        >
+          Explore Your Activities
+        </p>
+        <h3 class="title title-small sm:text-left md:text-4xl">
+          Real-Time Monitoring
+        </h3>
+        <p class="text md:text-left">
+          In this screenshot, you can observe the request count, current website
+          information, and permission status. You also have the ability to
+          update website permissions by simply clicking on the 'Update' button.
+          For limited-time permissions, a countdown timer is displayed.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col mb-8 sm:flex-row">
+      <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
+        <img class="rounded-sm" src="/img/frame-2.svg" alt="Screenshot 2" />
+      </div>
+      <div
+        class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pl-16"
+      >
+        <p
+          class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
+        >
+          Logging and Notifications
+        </p>
+        <h3 class="title title-small sm:text-left md:text-4xl">
+          Keep Track of Your Activities
+        </h3>
+        <p class="text md:text-left">
+          Welcome to the logging page! Witness a comprehensive view of all your
+          activities. You also have the capability to manage notification alerts
+          for each event.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col mb-8 sm:flex-row">
+      <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
+        <img class="rounded-sm" src="/img/frame-3.svg" alt="Screenshot 3" />
+      </div>
+      <div
+        class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
+      >
+        <p
+          class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
+        >
+          Enhanced Security
+        </p>
+        <h3 class="title title-small sm:text-left md:text-4xl">
+          Control Secure Request Access
+        </h3>
+        <p class="text md:text-left">
+          All requests are presented in a popup in a separate context that is
+          inaccessible to websites. Only the user has the authority to accept or
+          deny the requests, ensuring a heightened level of security.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+    <a class="text-teal-400" href="https://keys.band">
+      <img
+        src="img/key-logo.png"
+        width="48"
+        alt="Keys.Band Logo"
+        class="mx-auto mb-4"
+      />
+    </a>
+  </div>
+  <div class="flex flex-col justify-between mb-8 text-center sm:flex-row">
+    <p class="order-last mb-4 text-sm text-gray-500 sm:order-first">
+      Crafted with <span class="text-red-500">❤️</span> by the
+      <a href="https://toastr.space/" class="text-white">Toastr.Space</a> Team
+    </p>
   </div>
 </div>
