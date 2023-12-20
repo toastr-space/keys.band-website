@@ -34,7 +34,7 @@
 />
 
 <div
-  class="backdrop-blur-3xl bg-black bg-opacity-70 flex w-full flex-col justify-center items-center px-16 py-11 max-md:max-w-full max-md:px-5"
+  class="background-gradient flex w-full flex-col justify-center items-center px-16 py-11 max-md:max-w-full max-md:px-5"
 >
   <header
     class="flex w-full max-w-[1200px] flex-col items-stretch mb-8 max-md:max-w-full"
@@ -60,7 +60,8 @@
         >
           GitHub
         </a>
-        <div
+        <!-- Add back once we have more reviews -->
+        <!-- <div
           class="justify-between items-stretch bg-zinc-800 bg-opacity-70 flex gap-4 px-6 py-4 rounded-2xl border-[0.33px] border-solid border-white border-opacity-30 max-md:px-5"
         >
           <div class="text-white text-base font-medium grow whitespace-nowrap">
@@ -95,7 +96,7 @@
               class="aspect-[1.07] object-contain object-center w-4 fill-white fill-opacity-30 overflow-hidden shrink-0 max-w-full"
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </header>
@@ -108,7 +109,7 @@
       >
         <div class="flex grow flex-col max-md:mt-10">
           <h1
-            class="text-white text-8xl font-semibold self-stretch max-md:max-w-full max-md:text-4xl"
+            class="text-white text-9xl font-semibold self-stretch max-md:max-w-full max-md:text-6xl"
           >
             Safe nsecs
           </h1>
@@ -126,12 +127,12 @@
             > browser extension
           </div>
           <a
-            class="flex items-stretch justify-between border-[color:var(--AccentColour,#2FC6B4)] gap-2 mt-10 pl-9 pr-11 py-4 rounded-2xl border-[1.4px] border-solid max-md:flex-wrap max-md:px-5"
+            class="link-max-width flex items-stretch justify-between border-[color:var(--AccentColour,#2FC6B4)] gap-2 mt-10 pl-9 pr-11 py-4 rounded-2xl border-[1.4px] border-solid max-md:flex-wrap max-md:px-5"
             href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
             target="_blank"
           >
             <div
-              class="flex-grow flex-shrink basis-auto text-white text-base font-medium"
+              class="flex-shrink basis-auto text-white text-base font-medium"
             >
               <span class="font-medium">Download</span>
               <span class="font-light">in Chrome Store</span>
@@ -150,7 +151,7 @@
       >
         <img
           loading="lazy"
-          src="/img/auth-screen.png"
+          src="/img/main-screen.png"
           class="aspect-[0.82] object-contain object-center w-full items-start overflow-hidden max-md:mt-10"
         />
       </div>
@@ -159,7 +160,7 @@
   <div class="mt-20">
     <h2 class="title sm:text-4xl md:text-5xl">Fortify Your Nostr Keys</h2>
     <p class="mb-16 mx-auto intro sm:max-w-xl">
-      Elevate security with the Nostr Nip07 extension, safeguarding your keys
+      Elevate security with our Nostr Nip07 extension, safeguarding your keys
       and overseeing activities, notifications, and more.
     </p>
     <ul
@@ -212,7 +213,11 @@
     </p>
     <div class="flex flex-col mb-8 sm:flex-row">
       <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-        <img src="/img/frame-1.svg" alt="Screenshot 1" />
+        <img
+          class="rounded-sm w-80"
+          src="/img/frame-1.png"
+          alt="Screenshot 1"
+        />
       </div>
       <div
         class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
@@ -220,22 +225,24 @@
         <p
           class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
         >
-          Explore Your Activities
+          Website Authorization
         </p>
         <h3 class="title title-small sm:text-left md:text-4xl">
-          Real-Time Monitoring
+          Fine-Grained Control
         </h3>
         <p class="text md:text-left">
-          In this screenshot, you can observe the request count, current website
-          information, and permission status. You also have the ability to
-          update website permissions by simply clicking on the 'Update' button.
-          For limited-time permissions, a countdown timer is displayed.
+          Easily manage permissions for each website, including duration of
+          authorization and scope of access.
         </p>
       </div>
     </div>
     <div class="flex flex-col mb-8 sm:flex-row">
       <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-        <img class="rounded-sm" src="/img/frame-2.svg" alt="Screenshot 2" />
+        <img
+          class="rounded-sm w-80"
+          src="/img/frame-2.png"
+          alt="Screenshot 2"
+        />
       </div>
       <div
         class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pl-16"
@@ -243,21 +250,23 @@
         <p
           class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
         >
-          Logging and Notifications
+          Relays and Notifications
         </p>
         <h3 class="title title-small sm:text-left md:text-4xl">
-          Keep Track of Your Activities
+          Keep Track of Your Activities and Manage Relays
         </h3>
         <p class="text md:text-left">
-          Welcome to the logging page! Witness a comprehensive view of all your
-          activities. You also have the capability to manage notification alerts
-          for each event.
+          Toggle on/off notifications for events and manage relays.
         </p>
       </div>
     </div>
     <div class="flex flex-col mb-8 sm:flex-row">
       <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-        <img class="rounded-sm" src="/img/frame-3.svg" alt="Screenshot 3" />
+        <img
+          class="rounded-sm w-80"
+          src="/img/frame-3.png"
+          alt="Screenshot 3"
+        />
       </div>
       <div
         class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
@@ -265,15 +274,13 @@
         <p
           class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
         >
-          Enhanced Security
+          Dark and Light Mode
         </p>
         <h3 class="title title-small sm:text-left md:text-4xl">
-          Control Secure Request Access
+          Kind on the Eyes
         </h3>
         <p class="text md:text-left">
-          All requests are presented in a popup in a separate context that is
-          inaccessible to websites. Only the user has the authority to accept or
-          deny the requests, ensuring a heightened level of security.
+          Pixel perfect design with dark and light mode support.
         </p>
       </div>
     </div>
@@ -292,7 +299,18 @@
   <div class="flex flex-col justify-between mb-8 text-center sm:flex-row">
     <p class="order-last mb-4 text-sm text-gray-500 sm:order-first">
       Crafted with <span class="text-red-500">❤️</span> by the
-      <a href="https://toastr.space/" class="text-white">Toastr.Space</a> Team
+      <a href="https://toastr.space/" target="_blank" class="text-white"
+        >Toastr.Space</a
+      > Team
     </p>
   </div>
 </div>
+
+<style>
+  .background-gradient {
+    background-image: linear-gradient(to bottom, black, #1c4844, black);
+  }
+  .link-max-width {
+    max-width: 300px;
+  }
+</style>
