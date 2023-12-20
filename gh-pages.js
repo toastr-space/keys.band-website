@@ -6,8 +6,8 @@ publish(
     branch: "main",
     repo: "https://github.com/toastr-space/toastr-space.github.io",
     user: {
-      name: "ssakone",
-      email: "abdramanesakone1@gmail.com",
+      name: "SatoshiSound",
+      email: "satoshisound@protonmail.com",
     },
     dotfiles: true,
   },
