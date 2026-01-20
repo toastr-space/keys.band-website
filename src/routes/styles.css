@@ -1,30 +1,247 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent: #2FC6B4;
+  --accent-dim: #1a7a6f;
+  --bg-deep: #050a09;
+  --bg-surface: #0a1211;
+  --text-primary: #ffffff;
+  --text-secondary: #7a8a88;
+  --text-muted: #4a5654;
+  --border: rgba(47, 198, 180, 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg-deep);
+  }
+}
+
 @layer components {
-  .btn {
-    @apply inline-block px-6 py-2 font-semibold text-center text-white rounded-sm transition duration-150 ease-in-out;
+  .font-display {
+    font-family: 'Syne', sans-serif;
   }
 
-  .btn-tall {
-    @apply py-3;
+  .text-gradient {
+    background: linear-gradient(135deg, var(--accent) 0%, #4eeadb 50%, var(--accent) 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 8s ease infinite;
   }
 
-  .title {
-    @apply mb-4 text-3xl font-extrabold text-center text-white;
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
-  .title-small {
-    @apply text-2xl font-bold;
+  .glow {
+    box-shadow: 0 0 60px rgba(47, 198, 180, 0.15);
   }
 
-  .intro {
-    @apply text-xl text-gray-400 text-center mx-8 mb-12 max-w-sm;
+  .glow-text {
+    text-shadow: 0 0 40px rgba(47, 198, 180, 0.3);
   }
 
-  .text {
-    @apply text-xl text-gray-400;
+  .noise {
+    position: relative;
+  }
+
+  .noise::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(47, 198, 180, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(47, 198, 180, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes fade-in {
+    to { opacity: 1; }
+  }
+
+  @keyframes fade-in-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .border-glow {
+    position: relative;
+  }
+
+  .border-glow::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(135deg, var(--accent), transparent 50%, var(--accent));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .btn-primary {
+    @apply relative overflow-hidden px-8 py-4 font-display font-semibold text-sm tracking-wider uppercase;
+    background: var(--accent);
+    color: var(--bg-deep);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .btn-primary:hover::before {
+    transform: translateX(100%);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 30px rgba(47, 198, 180, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    @apply relative px-8 py-4 font-display font-medium text-sm tracking-wider uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    background: rgba(47, 198, 180, 0.1);
+    box-shadow: 0 0 20px rgba(47, 198, 180, 0.2);
+  }
+
+  .feature-card {
+    @apply relative p-8;
+    background: linear-gradient(135deg, rgba(47, 198, 180, 0.03) 0%, transparent 100%);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: all 0.4s ease;
+  }
+
+  .feature-card:hover {
+    border-color: rgba(47, 198, 180, 0.3);
+    background: linear-gradient(135deg, rgba(47, 198, 180, 0.06) 0%, transparent 100%);
+  }
+
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.4s ease;
+  }
+
+  .feature-card:hover::before {
+    width: 100%;
+  }
+
+  .screenshot-frame {
+    @apply relative;
+    background: linear-gradient(145deg, var(--bg-surface) 0%, var(--bg-deep) 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow:
+      0 25px 50px -12px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(47, 198, 180, 0.05);
+  }
+
+  .screenshot-frame img {
+    border-radius: 8px;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .pulse-ring {
+    animation: pulse-ring 2s ease-out infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
   }
 }
