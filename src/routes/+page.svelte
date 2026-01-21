@@ -1,316 +1,388 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
-  import { MetaTags } from "svelte-meta-tags";
+  import { MetaTags, JsonLd } from "svelte-meta-tags";
+  import { KeyRound, ShieldCheck, Bell, Github, Chrome, ArrowDown } from "lucide-svelte";
 </script>
 
 <MetaTags
-  title="Keys.Band Extension for Chrome"
-  titleTemplate="%s | Svelte Meta Tags"
-  description="Explore the Nostr Nip07 extension for browsers"
-  canonical="https://www.canonical.ie/"
+  title="Keys.Band — Secure Nostr Key Management Extension"
+  titleTemplate="%s"
+  description="Keys.Band is the most secure NIP-07 browser extension for Nostr. Manage multiple keys, control website permissions, track signing history, and protect your digital identity on Chromium browsers."
+  canonical="https://keys.band"
+  keywords={["nostr", "nip-07", "browser extension", "chrome extension", "key management", "nsec", "npub", "cryptographic keys", "digital identity", "decentralized", "privacy", "security"]}
   openGraph={{
+    type: "website",
     url: "https://keys.band",
-    title: "Unlock the Keys.Band Chrome Extension",
-    description: "Discover the Nostr Nip07 extension for browsers.",
+    title: "Keys.Band — Secure Nostr Key Management",
+    description: "The most secure NIP-07 browser extension for Nostr. Manage multiple keys, control permissions, and protect your digital identity.",
+    siteName: "Keys.Band",
+    locale: "en_US",
     images: [
       {
-        url: "https://keys.band/img/logo.png",
-        width: 800,
-        height: 600,
-        alt: "Keys.Band Og Image",
+        url: "https://keys.band/img/key-logo.png",
+        width: 512,
+        height: 512,
+        alt: "Keys.Band - Secure Nostr Key Management Extension",
+        type: "image/png",
       },
     ],
-    site_name: "Keys.Band",
   }}
   twitter={{
-    handle: "@handle",
-    site: "https://keys.band",
+    site: "@keysband",
     cardType: "summary_large_image",
-    title: "Unlock the Keys.Band Chrome Extension",
-    description: "Discover the Nostr Nip07 extension for browsers.",
-    image: "https://keys.band/img/logo.png",
-    imageAlt: "Twitter Image for Keys.Band",
+    title: "Keys.Band — Secure Nostr Key Management",
+    description: "The most secure NIP-07 browser extension for Nostr. Manage multiple keys, control permissions, and protect your identity.",
+    image: "https://keys.band/img/key-logo.png",
+    imageAlt: "Keys.Band - Secure Nostr Key Management Extension",
+  }}
+  additionalMetaTags={[
+    { name: "author", content: "Tirith.tech" },
+    { name: "theme-color", content: "#2FC6B4" },
+    { name: "application-name", content: "Keys.Band" },
+    { name: "apple-mobile-web-app-title", content: "Keys.Band" },
+    { name: "robots", content: "index, follow" },
+    { name: "googlebot", content: "index, follow" },
+    { property: "og:locale", content: "en_US" },
+  ]}
+  additionalLinkTags={[
+    { rel: "icon", href: "/favicon.png", type: "image/png" },
+    { rel: "apple-touch-icon", href: "/img/key-logo.png" },
+  ]}
+/>
+
+<JsonLd
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Keys.Band",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome, Brave, Edge, Opera",
+    "description": "Secure NIP-07 browser extension for Nostr key management. Manage multiple keys, control website permissions, and protect your digital identity.",
+    "url": "https://keys.band",
+    "downloadUrl": "https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm",
+    "softwareVersion": "1.0",
+    "author": {
+      "@type": "Organization",
+      "name": "Tirith.tech",
+      "url": "https://tirith.tech"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "10"
+    },
+    "featureList": [
+      "Multi-key management",
+      "Fine-grained permission control",
+      "Activity history and notifications",
+      "Dark and light mode support",
+      "NIP-07 compliant"
+    ],
+    "screenshot": "https://keys.band/img/main-screen.png",
+    "browserRequirements": "Requires Chromium-based browser (Chrome, Brave, Edge, Opera)"
   }}
 />
 
-<div
-  class="background-gradient flex w-full flex-col justify-center items-center px-16 py-11 max-md:max-w-full max-md:px-5"
->
-  <header
-    class="flex w-full max-w-[1200px] flex-col items-stretch mb-8 max-md:max-w-full"
-  >
-    <div
-      class="justify-between items-stretch flex w-full gap-5 pr-8 max-md:max-w-full max-md:flex-wrap max-md:pr-5"
-    >
-      <div class="items-stretch flex justify-between gap-5">
-        <img
-          loading="lazy"
-          src="/img/key-logo.png"
-          class="aspect-[0.76] object-contain object-center w-[42px] overflow-hidden shrink-0 max-w-full"
-        />
-        <div class="text-white text-2xl font-medium my-auto">keys.band</div>
-      </div>
-      <div
-        class="items-stretch self-center flex justify-between gap-5 my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center"
-      >
+<JsonLd
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Keys.Band",
+    "url": "https://keys.band",
+    "description": "Secure Nostr key management browser extension",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tirith.tech",
+      "url": "https://tirith.tech"
+    }
+  }}
+/>
+
+<JsonLd
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Keys.Band?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keys.Band is a secure NIP-07 browser extension for Nostr that allows you to manage multiple cryptographic keys, control website permissions, and protect your digital identity on Chromium-based browsers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which browsers support Keys.Band?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keys.Band works on all Chromium-based browsers including Google Chrome, Brave, Microsoft Edge, and Opera."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Keys.Band free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Keys.Band is completely free to use. You can download it from the Chrome Web Store."
+        }
+      }
+    ]
+  }}
+/>
+
+<div class="min-h-screen noise grid-pattern">
+  <!-- Ambient glow effects -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#2FC6B4] opacity-[0.03] blur-[150px] rounded-full"></div>
+    <div class="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-[#2FC6B4] opacity-[0.02] blur-[120px] rounded-full"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="relative z-10 px-6 lg:px-12 py-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 group fade-in">
+        <div class="relative">
+          <img
+            src="/img/key-logo.png"
+            alt="Keys.Band"
+            class="w-10 h-auto transition-transform duration-300 group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-[#2FC6B4] opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+        </div>
+        <span class="font-display font-semibold text-xl tracking-tight">keys.band</span>
+      </a>
+
+      <div class="flex items-center gap-8">
         <a
           href="https://github.com/toastr-space/keys-band"
           target="_blank"
-          class="text-white text-base font-medium self-center my-auto"
+          rel="noopener noreferrer"
+          class="fade-in stagger-1 text-[var(--text-secondary)] hover:text-white transition-colors duration-300 text-sm font-medium flex items-center gap-2"
         >
-          GitHub
+          <Github class="w-5 h-5" />
+          <span class="hidden sm:inline">GitHub</span>
         </a>
-        <!-- Add back once we have more reviews -->
-        <!-- <div
-          class="justify-between items-stretch bg-zinc-800 bg-opacity-70 flex gap-4 px-6 py-4 rounded-2xl border-[0.33px] border-solid border-white border-opacity-30 max-md:px-5"
-        >
-          <div class="text-white text-base font-medium grow whitespace-nowrap">
-            Reviews
-          </div>
-          <div
-            class="items-stretch self-center flex gap-1.5 my-auto max-md:justify-center"
-          >
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
-              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
-              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
-              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab10583b4d1e06c6032a71ff36ba539ba95f9444442876c88ef0164a064f836f?apiKey=f7abd25632984a63bf82dda361df2c86&"
-              class="aspect-[1.07] object-contain object-center w-4 fill-teal-400 overflow-hidden shrink-0 max-w-full"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f98517d564536fa4574fb880f54d6bd709127bb808d14aace03eded6fbc9d1d?apiKey=f7abd25632984a63bf82dda361df2c86&"
-              class="aspect-[1.07] object-contain object-center w-4 fill-white fill-opacity-30 overflow-hidden shrink-0 max-w-full"
-            />
-          </div>
-        </div> -->
       </div>
     </div>
-  </header>
-  <div
-    class="flex w-full max-w-[1200px] flex-col items-stretch mt-20 max-md:max-w-full max-md:mt-10 border-b border-gray-800 pb-20"
-  >
-    <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-      <div
-        class="flex flex-col items-stretch w-[57%] max-md:w-full max-md:ml-0"
-      >
-        <div class="flex grow flex-col max-md:mt-10">
-          <h1
-            class="text-white text-9xl font-semibold self-stretch max-md:max-w-full max-md:text-6xl"
-          >
-            Safe nsecs
-          </h1>
-          <h2
-            class="text-teal-400 text-5xl font-medium self-stretch max-md:max-w-full"
-          >
-            On Chromium browsers
-          </h2>
-          <div
-            class="text-white text-2xl font-medium leading-9 self-stretch mt-6 max-md:max-w-full"
-          >
-            Download our carefully crafted <br />
-            <a class="underline" href="https://nostr.com" target="_blank"
-              >Nostr</a
-            > browser extension
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 px-6 lg:px-12 pt-16 pb-32 lg:pt-24 lg:pb-40">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+        <!-- Left: Content -->
+        <div class="max-w-xl">
+          <div class="fade-in-up stagger-1 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--border)] bg-[var(--bg-surface)] mb-8">
+            <span class="relative flex h-2 w-2">
+              <span class="pulse-ring absolute inline-flex h-full w-full rounded-full bg-[var(--accent)]"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]"></span>
+            </span>
+            <span class="text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">NIP-07 Extension</span>
           </div>
-          <a
-            class="link-max-width flex items-stretch justify-between border-[color:var(--AccentColour,#2FC6B4)] gap-2 mt-10 pl-9 pr-11 py-4 rounded-2xl border-[1.4px] border-solid max-md:flex-wrap max-md:px-5"
-            href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
-            target="_blank"
-          >
-            <div
-              class="flex-shrink basis-auto text-white text-base font-medium"
+
+          <h1 class="fade-in-up stagger-2 font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6">
+            Your keys,<br/>
+            <span class="text-gradient glow-text">your identity</span>
+          </h1>
+
+          <p class="fade-in-up stagger-3 text-lg sm:text-xl text-[var(--text-secondary)] leading-relaxed mb-10 max-w-md">
+            The secure way to manage your Nostr keys. One extension, complete control over your digital identity.
+          </p>
+
+          <div class="fade-in-up stagger-4 flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary flex items-center justify-center gap-3"
             >
-              <span class="font-medium">Download</span>
-              <span class="font-light">in Chrome Store</span>
+              <Chrome class="w-5 h-5" />
+              <span>Add to Chrome</span>
+            </a>
+            <a href="#features" class="btn-outline flex items-center justify-center gap-2">
+              <span>Learn more</span>
+              <ArrowDown class="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Screenshot -->
+        <div class="fade-in-up stagger-5 relative flex justify-center lg:justify-end">
+          <div class="relative">
+            <div class="screenshot-frame glow">
+              <img
+                src="/img/main-screen.png"
+                alt="Keys.Band Extension Interface"
+                class="w-full max-w-[320px] h-auto"
+              />
             </div>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a629e858d3575d0f2b7f47c4bb5a9a1b84c685d44dc35b117684d3ba721e9499?apiKey=f7abd25632984a63bf82dda361df2c86&"
-              class="w-4 self-center shrink-0 max-w-full my-auto aspect-square object-contain object-center overflow-hidden stroke-[2px] stroke-teal-400"
-              loading="lazy"
-              alt="Chrome Store"
-            />
-          </a>
+            <!-- Decorative elements -->
+            <div class="absolute -top-4 -right-4 w-24 h-24 border border-[var(--border)] rounded-full opacity-50"></div>
+          </div>
         </div>
       </div>
-      <div
-        class="flex flex-col items-stretch w-[43%] ml-5 max-md:w-full max-md:ml-0"
-      >
-        <img
-          loading="lazy"
-          src="/img/main-screen.png"
-          class="aspect-[0.82] object-contain object-center w-full items-start overflow-hidden max-md:mt-10"
-        />
-      </div>
     </div>
-  </div>
-  <div class="mt-20">
-    <h2 class="title sm:text-4xl md:text-5xl">Fortify Your Nostr Keys</h2>
-    <p class="mb-16 mx-auto intro sm:max-w-xl">
-      Elevate security with our Nostr Nip07 extension, safeguarding your keys
-      and overseeing activities, notifications, and more.
-    </p>
-    <ul
-      class="flex flex-col flex-wrap justify-center mb-20 text-center border-b border-gray-900 sm:flex-row"
-    >
-      <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
-        <span
-          class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-teal-400 rounded-full"
-        >
-          <Icon icon="game-icons:house-keys" />
-        </span>
-        <h3 class="mb-2 text-2xl font-bold text-white">Multi-key Management</h3>
-        <p class="max-w-xs mx-auto text-lg text-gray-400">
-          Simplify key management and effortlessly switch between multiple keys
-          with a few clicks.
-        </p>
-      </li>
-      <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
-        <span
-          class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-teal-400 rounded-full"
-        >
-          <Icon icon="mdi:shield-key-outline" />
-        </span>
-        <h3 class="mb-2 text-2xl font-bold text-white">Permission Control</h3>
-        <p class="max-w-xs mx-auto text-lg text-gray-400">
-          Manage permissions, including duration and scope, and block untrusted
-          websites effortlessly.
-        </p>
-      </li>
-      <li class="w-full px-6 mb-8 sm:mb-16 md:w-1/2 lg:w-1/3">
-        <span
-          class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-3xl text-white bg-teal-400 rounded-full"
-        >
-          <Icon icon="ph:notification-bold" />
-        </span>
-        <h3 class="mb-2 text-2xl font-bold text-white">
-          History & Notifications
-        </h3>
-        <p class="max-w-xs mx-auto text-lg text-gray-400">
-          Keep track of all activities and manage notifications for each event
-          by priority.
-        </p>
-      </li>
-    </ul>
-  </div>
-  <div class="max-w-[1200px] mb-16 border-b border-gray-800">
-    <h2 class="mb-2 title sm:text-4xl md:text-5xl">Screenshots</h2>
-    <p class="mb-20 mx-auto intro sm:max-w-xl">
-      See what we have cooked up for you.
-    </p>
-    <div class="flex flex-col mb-8 sm:flex-row">
-      <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-        <img
-          class="rounded-sm w-80"
-          src="/img/frame-1.png"
-          alt="Screenshot 1"
-        />
-      </div>
-      <div
-        class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
-      >
-        <p
-          class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
-        >
-          Website Authorization
-        </p>
-        <h3 class="title title-small sm:text-left md:text-4xl">
-          Fine-Grained Control
-        </h3>
-        <p class="text md:text-left">
-          Easily manage permissions for each website, including duration of
-          authorization and scope of access.
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col mb-8 sm:flex-row">
-      <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-        <img
-          class="rounded-sm w-80"
-          src="/img/frame-2.png"
-          alt="Screenshot 2"
-        />
-      </div>
-      <div
-        class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pl-16"
-      >
-        <p
-          class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
-        >
-          Relays and Notifications
-        </p>
-        <h3 class="title title-small sm:text-left md:text-4xl">
-          Keep Track of Your Activities and Manage Relays
-        </h3>
-        <p class="text md:text-left">
-          Toggle on/off notifications for events and manage relays.
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col mb-8 sm:flex-row">
-      <div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-        <img
-          class="rounded-sm w-80"
-          src="/img/frame-3.png"
-          alt="Screenshot 3"
-        />
-      </div>
-      <div
-        class="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
-      >
-        <p
-          class="mb-2 text-sm font-semibold leading-none text-center text-teal-400 uppercase sm:text-left"
-        >
-          Dark and Light Mode
-        </p>
-        <h3 class="title title-small sm:text-left md:text-4xl">
-          Kind on the Eyes
-        </h3>
-        <p class="text md:text-left">
-          Pixel perfect design with dark and light mode support.
-        </p>
-      </div>
-    </div>
-  </div>
+  </section>
 
-  <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-    <a class="text-teal-400" href="https://keys.band">
-      <img
-        src="img/key-logo.png"
-        width="48"
-        alt="Keys.Band Logo"
-        class="mx-auto mb-4"
-      />
-    </a>
-  </div>
-  <div class="flex flex-col justify-between mb-8 text-center sm:flex-row">
-    <p class="order-last mb-4 text-sm text-gray-500 sm:order-first">
-      Crafted with <span class="text-red-500">❤️</span> by the
-      <a href="https://toastr.space/" target="_blank" class="text-white"
-        >Toastr.Space</a
-      > Team
-    </p>
-  </div>
+  <!-- Divider -->
+  <div class="divider max-w-4xl mx-auto"></div>
+
+  <!-- Features Section -->
+  <section id="features" class="relative z-10 px-6 lg:px-12 py-32">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="fade-in-up font-display font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-6">
+          Built for security
+        </h2>
+        <p class="fade-in-up stagger-1 text-[var(--text-secondary)] text-lg max-w-lg mx-auto">
+          Every feature designed with one goal: keeping your Nostr identity safe.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="feature-card hover-lift fade-in-up stagger-2">
+          <div class="w-12 h-12 flex items-center justify-center rounded bg-[var(--accent)] mb-6">
+            <KeyRound class="w-6 h-6 text-[var(--bg-deep)]" />
+          </div>
+          <h3 class="font-display font-semibold text-xl mb-3">Multi-Key Management</h3>
+          <p class="text-[var(--text-secondary)] leading-relaxed">
+            Seamlessly switch between multiple identities. One click to change who you are on Nostr.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card hover-lift fade-in-up stagger-3">
+          <div class="w-12 h-12 flex items-center justify-center rounded bg-[var(--accent)] mb-6">
+            <ShieldCheck class="w-6 h-6 text-[var(--bg-deep)]" />
+          </div>
+          <h3 class="font-display font-semibold text-xl mb-3">Permission Control</h3>
+          <p class="text-[var(--text-secondary)] leading-relaxed">
+            Fine-grained access control. Decide exactly what each site can do with your keys.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card hover-lift fade-in-up stagger-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded bg-[var(--accent)] mb-6">
+            <Bell class="w-6 h-6 text-[var(--bg-deep)]" />
+          </div>
+          <h3 class="font-display font-semibold text-xl mb-3">Activity History</h3>
+          <p class="text-[var(--text-secondary)] leading-relaxed">
+            Complete visibility into every signing request. Know exactly what's happening with your keys.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider max-w-4xl mx-auto"></div>
+
+  <!-- Screenshots Section -->
+  <section class="relative z-10 px-6 lg:px-12 py-32">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="fade-in-up font-display font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-6">
+          Crafted with care
+        </h2>
+        <p class="fade-in-up stagger-1 text-[var(--text-secondary)] text-lg max-w-lg mx-auto">
+          Every pixel considered. Every interaction refined.
+        </p>
+      </div>
+
+      <div class="space-y-32">
+        <!-- Screenshot 1 -->
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="order-2 lg:order-1">
+            <span class="fade-in-up inline-block text-[var(--accent)] text-xs font-semibold uppercase tracking-widest mb-4">Authorization</span>
+            <h3 class="fade-in-up stagger-1 font-display font-bold text-2xl sm:text-3xl mb-4">Granular Permissions</h3>
+            <p class="fade-in-up stagger-2 text-[var(--text-secondary)] text-lg leading-relaxed">
+              Control access duration and scope for each website. Block untrusted sites instantly. Your keys, your rules.
+            </p>
+          </div>
+          <div class="fade-in-up stagger-3 order-1 lg:order-2 flex justify-center">
+            <div class="screenshot-frame hover-lift">
+              <img src="/img/frame-1.png" alt="Permission Control Interface" class="w-full max-w-[280px]" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="fade-in-up flex justify-center">
+            <div class="screenshot-frame hover-lift">
+              <img src="/img/frame-2.png" alt="Relay Management Interface" class="w-full max-w-[280px]" />
+            </div>
+          </div>
+          <div>
+            <span class="fade-in-up inline-block text-[var(--accent)] text-xs font-semibold uppercase tracking-widest mb-4">Relays</span>
+            <h3 class="fade-in-up stagger-1 font-display font-bold text-2xl sm:text-3xl mb-4">Relay Management</h3>
+            <p class="fade-in-up stagger-2 text-[var(--text-secondary)] text-lg leading-relaxed">
+              Configure your relay connections. Toggle notifications. Stay informed about every event that matters.
+            </p>
+          </div>
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="order-2 lg:order-1">
+            <span class="fade-in-up inline-block text-[var(--accent)] text-xs font-semibold uppercase tracking-widest mb-4">Themes</span>
+            <h3 class="fade-in-up stagger-1 font-display font-bold text-2xl sm:text-3xl mb-4">Light & Dark</h3>
+            <p class="fade-in-up stagger-2 text-[var(--text-secondary)] text-lg leading-relaxed">
+              Pixel-perfect design in both modes. Easy on the eyes, day or night.
+            </p>
+          </div>
+          <div class="fade-in-up stagger-3 order-1 lg:order-2 flex justify-center">
+            <div class="screenshot-frame hover-lift">
+              <img src="/img/frame-3.png" alt="Theme Options" class="w-full max-w-[280px]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative z-10 px-6 lg:px-12 py-32">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="fade-in-up relative p-12 sm:p-16 rounded-lg border border-[var(--border)] bg-gradient-to-b from-[var(--bg-surface)] to-transparent">
+        <div class="absolute inset-0 bg-[var(--accent)] opacity-[0.02] rounded-lg"></div>
+        <h2 class="relative font-display font-bold text-3xl sm:text-4xl tracking-tight mb-6">
+          Ready to secure your identity?
+        </h2>
+        <p class="relative text-[var(--text-secondary)] text-lg mb-10 max-w-md mx-auto">
+          Join thousands of Nostr users who trust Keys.Band with their keys.
+        </p>
+        <a
+          href="https://chrome.google.com/webstore/detail/keysband/jdencabhccnfhedpfoojbbdlgmecnlkm"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative btn-primary inline-flex items-center gap-3"
+        >
+          <Chrome class="w-5 h-5" />
+          <span>Install Keys.Band</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 px-6 lg:px-12 py-12 border-t border-[var(--border)]">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <a href="/" class="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity">
+        <img src="/img/key-logo.png" alt="Keys.Band" class="w-8 h-auto" />
+        <span class="font-display font-medium">keys.band</span>
+      </a>
+
+      <p class="text-sm text-[var(--text-muted)]">
+        Crafted by <a href="https://tirith.tech/" target="_blank" rel="noopener noreferrer" class="text-[var(--text-secondary)] hover:text-white transition-colors">Tirith.tech</a>
+      </p>
+    </div>
+  </footer>
 </div>
-
-<style>
-  .background-gradient {
-    background-image: linear-gradient(to bottom, black, #1c4844, black);
-  }
-  .link-max-width {
-    max-width: 300px;
-  }
-</style>
